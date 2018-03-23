@@ -1,4 +1,4 @@
 ---
 layout: post
-permalink: /_docs
+permalink: /docs
 ---
