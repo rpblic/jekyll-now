@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: post
 title: Introducing StackEdit, Google Extension
 ---
 

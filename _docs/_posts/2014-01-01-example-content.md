@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: post
 title: Example content of lanyon
 ---
 
