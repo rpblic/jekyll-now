@@ -5,14 +5,14 @@ title: Docs
 
 <div class="docs">
   {% for doc in paginator.docs %}
-  <div class="doc">
-    <h3 class="doc-title">
+  <div class="post">
+    <h3 class="post-title">
       <a href="{{ site.baseurl }}/{{ doc.url }}">
         {{ doc.title }}
       </a>
     </h3>
 
-    <span class="doc-date">{{ doc.date | date_to_string }}</span>
+    <span class="post-date">{{ doc.date | date_to_string }}</span>
 
     {{ doc.content }}
   </div>
