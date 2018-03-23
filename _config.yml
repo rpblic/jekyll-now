@@ -9,7 +9,7 @@ name: BuildYourOwnRepublic
 description: Blog of rpblic, gyumin, sim
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{ site.baseurl }}/images/avatar.png)
+avatar: ![_config.yml]({{ site.baseurl }}/images/avatar.jpg)
 
 #
 # Flags below are optional
