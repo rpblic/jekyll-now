@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Example content
+layout: doc
+title: Example content of lanyon
 ---
 
 
