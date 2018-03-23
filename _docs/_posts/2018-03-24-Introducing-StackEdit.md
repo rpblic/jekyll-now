@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing StackEdit, Google Extension
+title: Introducing StackEdit
 ---
 
 <h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
