@@ -19,3 +19,9 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
