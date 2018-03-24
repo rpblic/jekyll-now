@@ -1,7 +1,7 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+# permalink:           pretty
 
 # Setup
 title:               BuildOurOwnRepublic
@@ -24,4 +24,4 @@ version:             1.0.0
 collections:
   docs:
     output: true
-    permalink: /docs/:path/
+    # permalink: /docs/:path/
