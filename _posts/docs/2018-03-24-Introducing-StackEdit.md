@@ -1,5 +1,5 @@
 ---
-layout: docc
+layout: post
 title: Introducing StackEdit
 ---
 
