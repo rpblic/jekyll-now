@@ -16,7 +16,7 @@ title: Docs
       </p>
       <p>
         {% if post.excerpt %}
-          {{ post.excerpt }}
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         {% endif %}
       </p>
     </li>
