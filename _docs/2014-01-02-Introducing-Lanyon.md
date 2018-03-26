@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: docc
 title: Introducing Lanyon
 ---
 
