@@ -4,7 +4,7 @@ title: Docs
 ---
 
 <div class="test">
-  {% for post in site.categories %}
+  {% for post in site.categories.document %}
     <p>
       {{ post }}
     </p>
