@@ -16,7 +16,12 @@ layout: default
       <a href="#{{ tag | slugify }}"> {{ tag }} </a>&nbsp;&nbsp;
     {% endfor %}
   </small></small>
-  {{ content }}
+  
+  <section>
+    <article>
+      {{ content }}
+    </article>
+  </section>
 </div>
 
 <div class="related">
