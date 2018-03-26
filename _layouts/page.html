@@ -9,9 +9,12 @@ layout: default
   The purpose of this snippet is to list all the tags you have in your site.
   =======================
   {% endcomment %}
-  {% for tag in page.tags %}
-  	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
-  {% endfor %}
+  <small>
+    Tags:
+    {% for tag in page.tags %}
+      <a href="#{{ tag | slugify }}"> {{ tag }} </a>&nbsp;&nbsp;
+    {% endfor %}
+  </small>
 
   {{ content }}
 </div>
