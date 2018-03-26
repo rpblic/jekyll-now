@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing StackEdit
+category: Document
 ---
 
 <h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
