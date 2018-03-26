@@ -3,10 +3,10 @@ layout: default
 title: Search:
 ---
 
-<div class="category-index">
+<div class="posts">
   {% for category in site.categories %}
     {% assign nposts = category | last | size %}
-    <div class="collection" data-name="{{ category | first | escape }}">
+    <div class="post" data-name="{{ category | first | escape }}">
       <header>
         <h1>{{ category | first }}</h1>
         <h2>{{ nposts }} post{% if nposts != 1 %}s{% endif %}</h2>
@@ -29,10 +29,10 @@ title: Search:
 </div>
 
 {% comment %}This is the same as above, just looping over tags{% endcomment %}
-<div class="tag-index">
+<div class="posts">
   {% for tag in site.tags %}
     {% assign nposts = tag | last | size %}
-    <div class="collection" data-name="{{ tag | first | escape }}">
+    <div class="post" data-name="{{ tag | first | escape }}">
       <header>
         <h1>{{ tag | first }}</h1>
         <h2>{{ nposts }} post{% if nposts != 1 %}s{% endif %}</h2>
@@ -54,7 +54,7 @@ title: Search:
   {% endfor %}
 </div>
 
-<div class="error">
+<div class="posts">
   <header>
     <h1>Error</h1>
   </header>
