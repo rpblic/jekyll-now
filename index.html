@@ -13,8 +13,11 @@ title: Home
     </h3>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    <p>
+      {% if post.excerpt %}
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      {% endif %}
+    </p>
   </div>
   {% endfor %}
 </div>
