@@ -3,4 +3,10 @@ layout: page
 title: Docs
 ---
 
-Test
+<div class="test">
+  {% for post in site.categories %}
+    <h3 class= "post">
+    {{ post.title }}
+    </h3>
+  {% endfor %}
+</div>
