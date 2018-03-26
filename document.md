@@ -6,7 +6,7 @@ title: Docs
 <div class="test">
   {% for post in site.categories.document %}
     <p>
-      {{ post }}
+      {{ post.title }}
     </p>
   {% endfor %}
 </div>
