@@ -20,6 +20,7 @@ title: Docs
         {% endif %}
       </p>
     </li>
+    <hr>
   </div>
   {% endfor %}
   </ul>
