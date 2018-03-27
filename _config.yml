@@ -10,7 +10,6 @@ description:         'blog of <a href="https://github.com/rpblic" target="_blank
 url:                 rpblic.github.io
 baseurl:             'https://rpblic.github.io'
 paginate:            3
-excerpt_separator: <!-- more -->
 
 # About/contact
 author:
