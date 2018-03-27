@@ -6,7 +6,7 @@ permalink:           pretty
 # Setup
 title:               BuildOurOwnRepublic
 tagline:             'blog rpblic'
-description:         'blog of <a href="https://github.com/rpblic" target="_blank">rpblic</a>, gyumin, sim. Lanyon jekyll them Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'blog of <a href="https://github.com/rpblic" target="_blank">rpblic</a>, gyumin, sim. Lanyon jekyll theme Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 rpblic.github.io
 baseurl:             'https://rpblic.github.io'
 paginate:            3
