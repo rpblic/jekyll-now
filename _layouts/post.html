@@ -31,7 +31,7 @@ layout: default
   Latest in Category:
   {% if {{page.category}} %}
     <ul class="related-posts">
-      {% for post in site.categories.{{page.category}} limit:3 %}
+      {% for post in site.categories[{{page.category}}] limit:3 %}
         <li>
           <small>
             <a href="{{ site.baseurl }}{{ post.url }}">
