@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <p>
-      {{ post.excerpt | truncate: 80, '...' | strip_html | strip_newlines }}
+      {{ post.excerpt | truncate: 300, '...' | strip_html | strip_newlines }}
     </p>
     <hr>
   </div>
