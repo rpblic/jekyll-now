@@ -19,13 +19,13 @@
     {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
         {% for cat_to_go in categories_list %}
-          <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="category#{{ cat_to_go | capitalize }}">
+          <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="{{ site.baseurl }}/category#{{ cat_to_go | capitalize }}">
             {{ cat_to_go | capitalize }}
           </a>
         {% endfor %}
       {% else %}
         {% for cat_to_go in categories_list %}
-          <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="category#{{ cat_to_go[0] | capitalize }}">
+          <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="{{ site.baseurl }}/category#{{ cat_to_go[0] | capitalize }}">
             {{ cat_to_go[0] | capitalize }}
           </a>
         {% endfor %}
@@ -46,8 +46,8 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-post-item" href="https://facebook.com/rpblic.gyuminsim">Facebook</a>
-    <a class="sidebar-nav-post-item" href="{{ site.github.repo }}">GitHub project</a>
+    <a class="sidebar-nav-item" href="https://facebook.com/rpblic.gyuminsim">Facebook</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub</a>
   </nav>
 
   <div class="sidebar-item">
