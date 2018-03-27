@@ -26,7 +26,7 @@
       {% else %}
         {% for cat_to_go in categories_list %}
           <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="category#{{ cat_to_go[0] | capitalize }}">
-            {{ cat_to_go | capitalize }}
+            {{ cat_to_go[0] | capitalize }}
           </a>
         {% endfor %}
       {% endif %}
