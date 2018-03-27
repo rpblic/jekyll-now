@@ -25,7 +25,7 @@ var postList = new Vue({
   }
 });
 
-axios.get('/posts.json')
+axios.get('/search.json')
   .then(function (response) {
     postList.posts = response.data.posts;
   })
