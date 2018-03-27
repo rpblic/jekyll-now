@@ -8,24 +8,32 @@ permalink: /category
 {% assign esc_ctgname="{{ hash }}" %}
 
 <div id="posts">
-  <ul>
-    <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
-      <div id="post">
-        <p>
-        <a v-bind:href="p.url">
-          {{ esc_title }}
-        </a>
-        _{{ esc_date }}
-        </p>
-        <p>
-          {% if esc_excerpt %}
-            {{ esc_excerpt }}
-          {% endif %}
-        </p>
-        <hr>
-      </div>
-    </li>
-  </ul>
+  <h1 class="page-title">{{ esc_ctgname }}</h1>
+  <div style="display:block;height:40px"></div>
+  
+  <section>
+    <article>
+      <ul>
+        <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
+          <div id="post">
+            <p>
+            <a v-bind:href="p.url">
+              {{ esc_title }}
+            </a>
+            _{{ esc_date }}
+            </p>
+            <p>
+              {% if esc_excerpt %}
+                {{ esc_excerpt }}
+              {% endif %}
+            </p>
+            <hr>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+
 </div>
 
 <script>
