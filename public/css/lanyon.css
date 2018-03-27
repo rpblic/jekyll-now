@@ -185,15 +185,15 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus,
-.sidebar-nav-item-post.active,
-a.sidebar-nav-item-post:hover,
-a.sidebar-nav-item-post:focus {
+.sidebar-nav-post-item.active,
+a.sidebar-nav-post-item:hover,
+a.sidebar-nav-post-item:focus {
   text-decoration: none;
   background-color: rgba(255,255,255,.1);
   border-color: transparent;
 }
 
-.sidebar-nav-item-post {
+.sidebar-nav-post-item {
   background-color: rgba(192,192,192,0.4)
 }
 
@@ -202,6 +202,10 @@ a.sidebar-nav-item-post:focus {
     padding: 1.5rem;
   }
   .sidebar-nav-item {
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+  }
+  .sidebar-nav-post-item {
     padding-left:  1.5rem;
     padding-right: 1.5rem;
   }

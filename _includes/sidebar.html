@@ -41,13 +41,13 @@
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "page" %}
-          <a class="sidebar-nav-item-post{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-post-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item-post" href="https://facebook.com/rpblic.gyuminsim">Facebook</a>
-    <a class="sidebar-nav-item-post" href="{{ site.github.repo }}">GitHub project</a>
+    <a class="sidebar-nav-post-item" href="https://facebook.com/rpblic.gyuminsim">Facebook</a>
+    <a class="sidebar-nav-post-item" href="{{ site.github.repo }}">GitHub project</a>
   </nav>
 
   <div class="sidebar-item">
