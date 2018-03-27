@@ -4,14 +4,28 @@ permalink: /category
 ---
 {% assign esc_title="{{ p.title }}" %}
 {% assign esc_date="{{ p.date }}" %}
+{% assign esc_excerpt= "{{ p.excerpt }}" %}
 {% assign esc_ctgname="{{ hash }}" %}
 
 <div id="post-list">
   <h2 class="title is-2">{{ esc_ctgname }}</h2>
   <ul>
-    <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
-      <a v-bind:href="p.url">{{ esc_title }}</a> <small>{{ esc_date }}</small>
-    </li>
+    <div class="post">
+      <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
+        <p>
+        <a v-bind:href="p.url">
+          {{ esc_title }}
+        </a>
+        _{{ esc_date | date_to_string }}
+        </p>
+        <p>
+          {% if esc_excerpt %}
+            {{ esc_excerpt | truncate: 300, '...' | strip_html | strip_newlines }}
+          {% endif %}
+        </p>        
+      </li>
+      <hr>
+    </div>
   </ul>
 </div>
 
