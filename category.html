@@ -16,11 +16,11 @@ permalink: /category
         <a v-bind:href="p.url">
           {{ esc_title }}
         </a>
-        _{{ esc_date | date_to_string }}
+        _{{ esc_date }}
         </p>
         <p>
           {% if esc_excerpt %}
-            {{ esc_excerpt | truncate: 300, '...' | strip_html | strip_newlines }}
+            {{ esc_excerpt }}
           {% endif %}
         </p>        
       </li>
