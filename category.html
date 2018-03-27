@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 permalink: /category
 ---
 {% assign esc_title="{{ p.title }}" %}
@@ -7,11 +7,10 @@ permalink: /category
 {% assign esc_excerpt= "{{ p.excerpt }}" %}
 {% assign esc_ctgname="{{ hash }}" %}
 
-<div id="post-list">
-  <h2 class="title is-2">{{ esc_ctgname }}</h2>
+<div id="posts">
   <ul>
-    <div class="post">
-      <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
+    <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
+      <div id="post">
         <p>
         <a v-bind:href="p.url">
           {{ esc_title }}
@@ -22,10 +21,10 @@ permalink: /category
           {% if esc_excerpt %}
             {{ esc_excerpt }}
           {% endif %}
-        </p>        
-      </li>
-      <hr>
-    </div>
+        </p>
+        <hr>
+      </div>
+    </li>
   </ul>
 </div>
 
