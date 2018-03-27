@@ -184,10 +184,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+a.sidebar-nav-item:focus,
+.sidebar-nav-item-post.active,
+a.sidebar-nav-item-post:hover,
+a.sidebar-nav-item-post:focus {
   text-decoration: none;
   background-color: rgba(255,255,255,.1);
   border-color: transparent;
+}
+
+.sidebar-nav-item-post {
+  background-color: rgba(192,192,192,0.4)
 }
 
 @media (min-width: 48em) {
