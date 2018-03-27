@@ -5,6 +5,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.category }}|&nbsp;&nbsp;{{ page.date | date_to_string }}</span>
+  
   <div style="display: block; padding-bottom: 40px">
     {% comment %}
     =======================
@@ -42,6 +43,6 @@ layout: default
       {% endfor %}
     </ul>
   {% else %}
-    <small>No other posts given.</small>
+    <small>No category of given post.</small>
   {% endif %}
 </div>
