@@ -16,7 +16,7 @@ title: Docs
           </p>
           <p>
             {% if post.excerpt %}
-              {{ post.excerpt | truncate: 80, '...' | strip_html | strip_newlines }}
+              {{ post.excerpt | truncate: 300, '...' | strip_html | strip_newlines }}
             {% endif %}
           </p>
         </li>
