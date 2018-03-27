@@ -1,65 +1,28 @@
 ---
 layout: default
-title: Search:
+page_title: Search
+permalink: /search/
 ---
 
-<div class="posts">
-  {% for category in site.categories %}
-    {% assign nposts = category | last | size %}
-    <div class="post" data-name="{{ category | first | escape }}">
-      <header>
-        <h1>{{ category | first }}</h1>
-        <h2>{{ nposts }} post{% if nposts != 1 %}s{% endif %}</h2>
-      </header>
-      <ul>
-        {% for posts in category %}
-          {% for post in posts %}
-            {% comment %}
-            I'm not sure why I need to check for the title, I think because the
-            category is itself part of the posts list for some reason.
-            {% endcomment %}
-            {% if post.title %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
+<!— Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
 </div>
 
-{% comment %}This is the same as above, just looping over tags{% endcomment %}
-<div class="posts">
-  {% for tag in site.tags %}
-    {% assign nposts = tag | last | size %}
-    <div class="post" data-name="{{ tag | first | escape }}">
-      <header>
-        <h1>{{ tag | first }}</h1>
-        <h2>{{ nposts }} post{% if nposts != 1 %}s{% endif %}</h2>
-      </header>
-      <ul>
-        {% for posts in tag %}
-          {% for post in posts %}
-            {% comment %}
-            I'm not sure why I need to check for the title, I think because the
-            tag is itself part of the posts list for some reason.
-            {% endcomment %}
-            {% if post.title %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
+<!-- Script pointing to jekyll-search.js -->
+<script src="{{site.baseurl}}/dest/jekyll-search.js" type="text/javascript"></script>
 
-<div class="posts">
-  <header>
-    <h1>Error</h1>
-  </header>
-  <p class="too-few-parameters">You didn't specify any search parameters.</p>
-  <p class="too-many-parameters">You specified too many search parameters.</p>
-  <p class="no-results">There were no results found for your query.</p>
-  <p><a href="/blog/">Return to the post index</a> and try again.</p>
-</div>
+
+<script type="text/javascript">
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+</script>

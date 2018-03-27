@@ -20,14 +20,3 @@ author:
 
 # Custom vars
 version:             1.0.0
-
-# Collections
-collections:
-  docs:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: docs
-      values:
-        layout: docc
