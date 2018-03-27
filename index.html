@@ -4,7 +4,8 @@ title: Home
 ---
 <div>
   {% for category in site.public.json.categories %}
-  {{ category }}
+    {{ category }}
+  {% endfor %}
 </div>
 
 <div class="posts">
