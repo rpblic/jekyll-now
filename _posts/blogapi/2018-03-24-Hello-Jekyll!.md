@@ -2,7 +2,7 @@
 layout: post
 title: Hello Jekyll!
 tags: [Hello, Jekyll, HowtoTag, Programming, Blog]
-category: BlogApi
+category: Blogapi
 ---
 
 This is just TestTestTest.
