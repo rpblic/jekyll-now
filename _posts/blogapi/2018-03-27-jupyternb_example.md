@@ -2,7 +2,7 @@
 layout: post
 title: Jupyter Notebook Test
 tags: [JpterNb, Test, DataAnalysis, 공모전]
-category: BlogApi
+category: Blogapi
 ---
 
 
