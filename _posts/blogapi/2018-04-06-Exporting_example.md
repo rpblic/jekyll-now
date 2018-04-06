@@ -4,10 +4,10 @@
 ---
 
 <hr>
-<p>layout: post<br>
+<h2 id="layout-posttitle-외부-포스트-가져오기-examplecategory-blogapitags-맨시티-리버풀">layout: post<br>
 title: 외부 포스트 가져오기 example<br>
 category: Blogapi<br>
-tags: [‘맨시티’, ‘리버풀’]</p>
+tags: [‘맨시티’, ‘리버풀’]</h2>
 <p>출처:  <a href="http://yachuk.com/archives/31720">http://yachuk.com/archives/31720</a></p>
 <h1 id="현재-제일-빡친-사람.jpg--yachuk.com">현재 제일 빡친 사람.jpg | <a href="http://yachuk.com">yachuk.com</a></h1>
 <blockquote>
