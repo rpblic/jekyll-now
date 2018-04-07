@@ -28,15 +28,15 @@ comments: true
   </section>
 </div>
 
-<!-- <div class= "comments .utterances">
+<div class= "comments .utterances">
   <script src="https://utteranc.es/client.js"
         repo="rpblic/blog_comments"
         issue-term="pathname"
         async>
   </script>
-</div> -->
+</div>
 
-{% if page.comments %}
+<!-- {% if page.comments %}
     <div id="disqus_thread"></div>
     <script>
 
@@ -45,7 +45,7 @@ comments: true
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
       var disqus_config = function () {
-        this.page.url = '{{ site.baseurl }}/{{ page.url }}';  
+        this.page.url = '{{ site.baseurl }}{{ page.url }}';  
       };
 
       (function() { // DON'T EDIT BELOW THIS LINE
@@ -56,7 +56,7 @@ comments: true
       })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+{% endif %} -->
 
 <div class="related">
   Latest in Category:
