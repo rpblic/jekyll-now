@@ -5,7 +5,7 @@ category: Blogapi
 tags: ['맨시티', '리버풀']
 ---
 
-[출처: http://yachuk.com/archives/31720](http://yachuk.com/archives/31720 "Permalink to 현재 제일 빡친 사람.jpg | yachuk.com")
+[출처: http://yachuk.com/archives/31720](http://yachuk.com/archives/31720 "Permalink to 현재 제일 빡친 사람.jpg")
 
 # 현재 제일 빡친 사람.jpg
 
