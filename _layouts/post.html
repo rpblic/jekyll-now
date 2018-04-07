@@ -28,13 +28,13 @@ comments: true
   </section>
 </div>
 
-<div class= "comments .utterances">
+<!-- <div class= "comments .utterances">
   <script src="https://utteranc.es/client.js"
         repo="rpblic/blog_comments"
         issue-term="pathname"
         async>
   </script>
-</div>
+</div> -->
 
 {% if page.comments %}
     <div id="disqus_thread"></div>
@@ -45,8 +45,7 @@ comments: true
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
         var disqus_config = function () {
-            this.page.url = {{ site.baseurl }}/{{ page.url }};  
-            this.page.title = {{ page.title }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = '{{ site.baseurl }}/{{ page.url }}';  
         };
 
         (function() { // DON'T EDIT BELOW THIS LINE
