@@ -14,7 +14,8 @@ paginate:            3
 # About/contact
 author:
   name:              rpblic
-  url:               https://github.com/rpblic
+  githuburl:         https://github.com/rpblic
+  fburl:             https://facebook.com/rpblic.gyuminsim
   email:             rbals1218@gmail.com
 
 # Custom vars
