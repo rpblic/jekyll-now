@@ -3,7 +3,6 @@ layout: post
 title: 외부 포스트 가져오기 example
 category: Blogapi
 tags: ['맨시티', '리버풀']
-comments: true
 ---
 
 [출처: http://yachuk.com/archives/31720](http://yachuk.com/archives/31720 "Permalink to 현재 제일 빡친 사람.jpg")
