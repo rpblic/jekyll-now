@@ -12,8 +12,12 @@ layout: default
 
 <!-- <script src='{{ site.baseurl }}/public/js/scrollanim-master/scrollanim.js'></script> -->
 <script>
-  kissuiScrollAnim.add(document.getElementByClassName('pagesheet'), {
-      'in': 'fadeIn',
-      'middle': 'pulse'
-  });
+  const pg = document.getElementById('pagesheet');
+  for (const i=0; i<pg.length; i++){
+    kissuiScrollAnim.add(pg[i], {
+        'in': 'fadeIn',
+        'middle': 'pulse'
+    });
+  }
+
 </script>
