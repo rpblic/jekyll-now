@@ -9,3 +9,11 @@ layout: default
     {{ content }}
   </div>
 </div>
+
+<script src='{{ site.baseurl }}/public/js/scrollanim-master/scrollanim.js'></script>
+<script>
+  kissuiScrollAnim.add(document.getElementByClassName('container'), {
+      'in': 'fadeIn',
+      'middle': 'pulse'
+  });
+</script>
