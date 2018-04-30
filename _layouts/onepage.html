@@ -13,8 +13,8 @@ layout: default
 <script src='https://cdnjs.cloudflare.com/ajax/libs/kissui.scrollanim/0.2.0/scrollanim.js'></script>
 <script>
   const pg = document.getElementsByClassName("sheet");
-  for (var elmt in pg){
-    kissuiScrollAnim.add(elmt, {
+  for (var i=0; i<pg.length; i++){
+    kissuiScrollAnim.add(pg[i], {
         'in': 'fadeIn',
         'middle': 'pulse'
     });
