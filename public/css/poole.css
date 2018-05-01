@@ -49,7 +49,7 @@ body {
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 @media (min-width: 38em) {
@@ -239,7 +239,7 @@ table {
   margin-bottom: 1rem;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   -webkit-flex: initial;
   flex: initial;
   width:600px;
