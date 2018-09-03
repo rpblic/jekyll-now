@@ -33,7 +33,7 @@
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
 
-    {% assign sorted_categories_list = site.categories | split: '|' | sort %}
+    {% assign sorted_categories_list = site.categories | sort %}
       {% if sorted_categories_list.first[0] == null %}
         {% for cat_to_go in sorted_categories_list %}
           <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="{{ site.baseurl }}/category#{{ cat_to_go | capitalize }}">
