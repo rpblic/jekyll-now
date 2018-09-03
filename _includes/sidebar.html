@@ -15,6 +15,7 @@
       The code below dynamically generates a sidebar nav of pages with
       `layout: onepage` in the front-matter. See readme for usage.
     {% endcomment %}
+
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
       {% if node.title != null %}
@@ -32,21 +33,21 @@
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
 
-    {% assign categories_list = site.categories %}
-      {% if categories_list.first[0] == null %}
-        {% for cat_to_go in categories_list %}
+    {% assign sorted_categories_list = site.categories | split: '|' | sort %}
+      {% if sorted_categories_list.first[0] == null %}
+        {% for cat_to_go in sorted_categories_list %}
           <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="{{ site.baseurl }}/category#{{ cat_to_go | capitalize }}">
             {{ cat_to_go | capitalize }}
           </a>
         {% endfor %}
       {% else %}
-        {% for cat_to_go in categories_list %}
+        {% for cat_to_go in sorted_categories_list %}
           <a class="sidebar-nav-item{% if page.category == cat_to_go %} active{% endif %}" href="{{ site.baseurl }}/category#{{ cat_to_go[0] | capitalize }}">
             {{ cat_to_go[0] | capitalize }}
           </a>
         {% endfor %}
       {% endif %}
-    {% assign categories_list = nil %}
+    {% assign sorted_categories_list = nil %}
     
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
