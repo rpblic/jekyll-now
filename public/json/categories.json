@@ -1,9 +1,9 @@
 ---
 layout: null
 ---
+{% assign sorted_cats = site.categories | split: '|' | sort %}
 {
     "categories": [
-    	{% assign sorted_cats = site.categories | sort %}
         {% for category in sorted_cats %}
             "{{ category | first }}"
             {% unless forloop.last %},{% endunless %}
