@@ -24,6 +24,9 @@
       {% endif %}
     {% endfor %}
 
+    <a class="sidebar-nav-post-item" href="{{ site.author.fburl }}">Facebook</a>
+    <a class="sidebar-nav-post-item" href="{{ site.author.githuburl }}">GitHub</a>
+
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -58,8 +61,6 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.author.fburl }}">Facebook</a>
-    <a class="sidebar-nav-item" href="{{ site.author.githuburl }}">GitHub</a>
   </nav>
 
   <div class="sidebar-item">
