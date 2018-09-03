@@ -5,9 +5,9 @@ category: Lecture_note
 tags: ['Modulabs', 'ComputerScience', 'Internet', 'InformationTheory']
 ---
 
-#Modulabs Datalab1 180521
+# Modulabs Datalab1 180521
 
-###How Computers Work?
+### How Computers Work?
 
 * Input, Processing, Memory, Output
 * Binary Data: 컴퓨터는 0과 1로 모든 데이터를 저장
@@ -20,7 +20,7 @@ IMG >> dots(pixels) with RGB Integer Data
 * Processing(CPU) <> Information Storing(Memory)
 
 ----------------
-###Internet 101
+### Internet 101
 
 * 전기: 저렴하지만 정보 손실 가능성, 전달 거리 짧음
 * 빛: 반사되는 각도에 따라 여러 비트를 보낼 수 있음, 빠르고 신호 손실이 없으나 비싸고 다루기 힘듬
@@ -38,7 +38,7 @@ IMG >> dots(pixels) with RGB Integer Data
 * 보안: SSL(Secure Sockets Layer), TLS(Transport Layer Security), SSH(공개 키 <> 개인 키 방식)
 
 ----------
-###Information Theory- Ancient
+### Information Theory- Ancient
 
 상징하는 바를 닮은 그림 >> 추상적 개념으로써의 그림 >> 소리의 결합을 통한 새로운 의미 창출(레부스 체계) >> 그림의 의미가 사라지고 소리만 남음 >> 문자의 단순화, 필기에 간편하도록 변형(데모틱 문자)
 
