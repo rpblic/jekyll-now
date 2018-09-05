@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modulabs Datalab1 180521
-category: Lecture_note
+category: Modulabs.lecture
 tags: ['Modulabs', 'ComputerScience', 'Internet', 'InformationTheory']
 ---
 

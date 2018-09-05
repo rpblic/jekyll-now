@@ -1,7 +1,7 @@
 ---
 layout: post
 title: R과 시계열 분석 스터디
-category: Practice.timeseries_analysis
+category: Timeseries.practice
 tags: ['R', 'Arima', 'HoltWinters', 'STL', 'TBATS']
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: DeepLearning Zero To All Lecture note
 tags: ['DL', 'ZeroToAll', 'LectureNote']
-category: Lecture_note
+category: Tf.lecture
 ---
 
 Lecture Notes of DL Zero To All, Sung Kim.
