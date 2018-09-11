@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "회사도 인생도, 마지막을 결정하는 건 꿈의 크기" 유니콘 감별사 VC 김한준, 일의 의미를 말하다
+title: 회사도 인생도, 마지막을 결정하는 건 꿈의 크기 -유니콘 감별사 VC 김한준, 일의 의미를 말하다
 category: Article
 tags: ['Article', 'Passion', 'Insight']
 ---
