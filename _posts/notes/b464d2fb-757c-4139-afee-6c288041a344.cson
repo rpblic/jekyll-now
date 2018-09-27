@@ -1,5 +1,5 @@
 createdAt: "2018-09-26T08:48:34.209Z"
-updatedAt: "2018-09-27T07:55:08.118Z"
+updatedAt: "2018-09-27T08:11:36.236Z"
 type: "MARKDOWN_NOTE"
 folder: "418af029155901b7f280"
 title: ""
@@ -44,15 +44,15 @@ content: '''
            - Generalized version of ReLU / Leaky ReLU
          - Disadvantages: it doubles the number of parameters
        - In Practice: Use ReLU, Try Leaky ReLU / ELU / Maxout, Don't expect much on tanh, Do not use sigmoid
-  ![Activation Function](/public/img/cs231n/lec6.activation_function.png)
-  ![Not-Zero-Centered Problem](/public/img/cs231n/lec6.not-zero-centered_problem_of_ReLU.png)
+  ![Activation Function](/public/img/cs231n/lec6.activation_function.PNG)
+  ![Not-Zero-Centered Problem](/public/img/cs231n/lec6.not-zero-centered_problem_of_ReLU.PNG)
   
     - Data Preprocessing
       - There might be a constraint in all-positive or all-negative data: it is good to make data zero-centered
         - For each cases, we do subtract the total mean value or subtract the channel mean value for each channel
       - Another preprocessing might not be needed; since our data is all given pixels, we don't want to reduce its dimension or scale its description values.
-  ![Data Preprocessing](/public/img/cs231n/lec6.data_preprocessing.png)
-  ![Data Preprocessing 2](/public/img/cs231n/lec6.data_preprocessing_2.png)
+  ![Data Preprocessing](/public/img/cs231n/lec6.data_preprocessing.PNG)
+  ![Data Preprocessing 2](/public/img/cs231n/lec6.data_preprocessing_2.PNG)
   
     - Weight Initialization
       - If we initialize weight as 0, or other constant value, then every front-propagation and backpropagation computation value would be same for every node; Network would be needless
@@ -60,10 +60,10 @@ content: '''
       - If we initialize weight as big random numbers, then neuron nodes would saturate as 1 or -1, gradients would be zero.
       - reasonable initialization by Xavier initialization {random number in (0,1)} / {root of {# of input node}}
         - In ReLU, we tend to use {root of {# of input node / 2}} instead of {root of {# of input node}}
-  ![Small-scale Problem in Initialization](/public/img/cs231n/lec6.initialization_problem.png)
-  ![Big-scale Problem in Initialization](/public/img/cs231n/lec6.initialization_problem_2.png)
-  ![Xavier Initialization](/public/img/cs231n/lec6.xavier_initialization.png)
-  ![Initialization in ReLU](/public/img/cs231n/lec6.initialization_in_ReLU.png)
+  ![Small-scale Problem in Initialization](/public/img/cs231n/lec6.initialization_problem.PNG)
+  ![Big-scale Problem in Initialization](/public/img/cs231n/lec6.initialization_problem_2.PNG)
+  ![Xavier Initialization](/public/img/cs231n/lec6.xavier_initialization.PNG)
+  ![Initialization in ReLU](/public/img/cs231n/lec6.initialization_in_ReLU.PNG)
   
     - Batch Normalization
       - Goal: keep the gaussian distribution of activation rate(that is, don't lead nodes to be dead)
@@ -72,9 +72,9 @@ content: '''
       - It gives robustness in range of learning rates/different initialization, and improves gradient flow
       - Practically, instead of using just normalized xhat, we also learn gamma and beta value. It would coordinate the result value while proceeding learning process
       - Practically, instead of solving each batch's mean/std, we might use single fixed empirical mean/std estimated from first training.
-  ![Batch Normalization](/public/img/cs231n/lec6.batch_normalization.png)
-  ![Batch Normalization 2](/public/img/cs231n/lec6.batch_normalization_2.png)
-  ![Batch Normalization Algorithm](/public/img/cs231n/lec6.batch_normalization_algorithm.png)
+  ![Batch Normalization](/public/img/cs231n/lec6.batch_normalization.PNG)
+  ![Batch Normalization 2](/public/img/cs231n/lec6.batch_normalization_2.PNG)
+  ![Batch Normalization Algorithm](/public/img/cs231n/lec6.batch_normalization_algorithm.PNG)
   
     - Babysitting the Learning Process
       - Preprocessing > Choosing architecture > Varient Test > Train Data!
@@ -88,11 +88,11 @@ content: '''
         - Do cross validation with log space!
         - Search hyperparameters with Random Search instead of Grid Search: it can find out the signals of distributions of hyperparameters more naturally.
       - Monitering the Hyperparameters with graph, or some indicator(ex: {gap between training acc and validation acc}, {weight updates}/{weight magnitudes})
-  ![Cross Validation](/public/img/cs231n/lec6.coarse_cross_validation.png)
-  ![Cross Validation 2](/public/img/cs231n/lec6.finer_cross_validation.png)
-  ![Monitering Loss Curve](/public/img/cs231n/lec6.monitering_loss_curve.png)
-  ![Monitering Loss Curve 2](/public/img/cs231n/lec6.monitering_loss_curve_2.png)
-  ![Monitering Accuracy Curve](/public/img/cs231n/lec6.monitering_accuracy_curve.png)
+  ![Cross Validation](/public/img/cs231n/lec6.coarse_cross_validation.PNG)
+  ![Cross Validation 2](/public/img/cs231n/lec6.finer_cross_validation.PNG)
+  ![Monitering Loss Curve](/public/img/cs231n/lec6.monitering_loss_curve.PNG)
+  ![Monitering Loss Curve 2](/public/img/cs231n/lec6.monitering_loss_curve_2.PNG)
+  ![Monitering Accuracy Curve](/public/img/cs231n/lec6.monitering_accuracy_curve.PNG)
   
   2. Training Dynamics
   3. Evaluation

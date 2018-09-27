@@ -1,5 +1,5 @@
 createdAt: "2018-09-24T09:18:37.075Z"
-updatedAt: "2018-09-27T07:58:33.260Z"
+updatedAt: "2018-09-27T08:12:42.852Z"
 type: "MARKDOWN_NOTE"
 folder: "418af029155901b7f280"
 title: ""
@@ -26,15 +26,15 @@ content: '''
         - Max pooling or Average pooling
     - looking at a local region- spatially! (unlike FCNN- take features from linear vectorization and dot product)
   
-  ![Convoluiton Layer](/public/img/cs231n/lec5.conv_layer.png)
-  ![Stack of Convoluiton Layer](/public/img/cs231n/lec5.stack_of_conv_layers.png)
-  ![Number of Parameters](/public/img/cs231n/lec5.num_of_params_in_conv_layer.png)
-  ![Convoluiton Layer Summary](/public/img/cs231n/lec5.conv_layer_summary.png)
-  ![Visualization of Convoluiton Layer](/public/img/cs231n/lec5.visualization_of_conv_layer.png)
-  ![Result of Convolutional Layer](/public/img/cs231n/lec5.result_of_convnet.png)
-  ![Pooling Layer](/public/img/cs231n/lec5.pooling_layer.png)
-  ![Pooling Layer Summary](/public/img/cs231n/lec5.pooling_layer_summary.png)
-  ![Summary](/public/img/cs231n/lec5.summary_and_trend.png)
+  ![Convoluiton Layer](/public/img/cs231n/lec5.conv_layer.PNG)
+  ![Stack of Convoluiton Layer](/public/img/cs231n/lec5.stack_of_conv_layers.PNG)
+  ![Number of Parameters](/public/img/cs231n/lec5.num_of_params_in_conv_layer.PNG)
+  ![Convoluiton Layer Summary](/public/img/cs231n/lec5.conv_layer_summary.PNG)
+  ![Visualization of Convoluiton Layer](/public/img/cs231n/lec5.visualization_of_conv_layer.PNG)
+  ![Result of Convolutional Layer](/public/img/cs231n/lec5.result_of_convnet.PNG)
+  ![Pooling Layer](/public/img/cs231n/lec5.pooling_layer.PNG)
+  ![Pooling Layer Summary](/public/img/cs231n/lec5.pooling_layer_summary.PNG)
+  ![Summary](/public/img/cs231n/lec5.summary_and_trend.PNG)
   
   (Omit the history of CNN and range of image recognition & reconstruction)
   

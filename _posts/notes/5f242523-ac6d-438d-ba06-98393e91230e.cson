@@ -1,5 +1,5 @@
 createdAt: "2018-09-24T06:20:03.986Z"
-updatedAt: "2018-09-27T07:58:08.780Z"
+updatedAt: "2018-09-27T08:12:31.219Z"
 type: "MARKDOWN_NOTE"
 folder: "418af029155901b7f280"
 title: ""
@@ -20,18 +20,18 @@ content: '''
     - sigmoid gate
     - when calculate in vectorized form, the gradient comes as Jacobian Form, same matrix size with the shape of W.
   
-  ![Simple example of chain rule](/public/img/cs231n/lec4.chain_rule.png)
-  ![Example of chain rule in vector](/public/img/cs231n/lec4.chain_rule_vectorized_ver.png)
-  ![Sigmoid Function](/public/img/cs231n/lec4.sigmoid_and_its_derivative.png)
+  ![Simple example of chain rule](/public/img/cs231n/lec4.chain_rule.PNG)
+  ![Example of chain rule in vector](/public/img/cs231n/lec4.chain_rule_vectorized_ver.PNG)
+  ![Sigmoid Function](/public/img/cs231n/lec4.sigmoid_and_its_derivative.PNG)
   
   - Backpropagation: After calculating Forward prediction(propagation) and calculating loss, calculate each partial derivatives by applying chain rule of derivative, then modipy parameters with these gradient. Iterate each Forward propagation and Backward propagation to minimize loss.
   
-  ![Example of Forward and Backward Propagation](/public/img/cs231n/lec4.example_of_forward_backward_api.png)
+  ![Example of Forward and Backward Propagation](/public/img/cs231n/lec4.example_of_forward_backward_api.PNG)
   
   - Neural Network: Stack multiple linear matrix multiplication layer(and also an activation layer), so that model gets non-linearity or various templates.
   
-  ![How Neuron actually works](/public/img/cs231n/lec4.how_neuron_actually_works.png)
-  ![Activation Functions](/public/img/cs231n/lec4.activation_functions.png)
+  ![How Neuron actually works](/public/img/cs231n/lec4.how_neuron_actually_works.PNG)
+  ![Activation Functions](/public/img/cs231n/lec4.activation_functions.PNG)
 '''
 tags: []
 isStarred: false
