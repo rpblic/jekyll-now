@@ -1,5 +1,5 @@
 createdAt: "2018-09-23T09:18:13.300Z"
-updatedAt: "2018-09-27T05:14:25.326Z"
+updatedAt: "2018-09-27T07:56:09.697Z"
 type: "MARKDOWN_NOTE"
 folder: "418af029155901b7f280"
 title: ""
@@ -12,7 +12,7 @@ content: '''
   ---
   
   - The Main Problem: Semantic Gap(to computer, it's just a gigantic grid(matrix) of numbers)
-  ![Semantic Gap](public\\img\\cs231n\\lec2.Semantic_Gap.png)
+  ![Semantic Gap](/public/img/cs231n/lec2.Semantic_Gap.png)
   - Visual recognition algorithm must be robust with
     - Lighting conditions
     - Location of camera
