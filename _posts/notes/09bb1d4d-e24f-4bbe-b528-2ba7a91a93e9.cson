@@ -1,0 +1,80 @@
+createdAt: "2018-10-23T02:46:48.715Z"
+updatedAt: "2018-10-23T05:47:21.909Z"
+type: "MARKDOWN_NOTE"
+folder: "418af029155901b7f280"
+title: ""
+content: '''
+  ---
+  layout: post
+  title: Lecture 8 Deep Learning Software
+  category: Dl.cs231n.lecture
+  tags: ['DeepLearning', 'CS231n']
+  ---
+  
+  ![CPU vs GPU](/public/img/cs231n/lec8.cpu_vs_gpu.PNG)
+  ![CPU vs GPU2](/public/img/cs231n/lec8.cpu_vs_gpu2.PNG)
+  ![CPU vs GPU3](/public/img/cs231n/lec8.cpu_vs_gpu3.PNG)
+  ![Bottleneck in Data IO](/public/img/cs231n/lec8.bottleneck_in_data_IO.PNG)
+  
+  * GPU works much faster in massive parallel problems, because of its # of cores and straightforward structure(CPU matters more on capability and sequential task control)
+  * We could program GPUs by using CUDA(NVIDIA!)(and Higher level APIs cuBLAS, cuFFT, cuDNN), OpenCL(available in AMD, but slower than CUDA)
+  * There might be a bottleneck in reading data and transferring to GPU. Using RAM or SSD HD, using multiple CPU threads to IO could be a solution.
+  
+  ![Deeplearning Libraries](/public/img/cs231n/lec8.Deeplearning_libraries.PNG)
+  ![Computational Graph with Numpy and Tensorflow](/public/img/cs231n/lec8.np_and_tf.PNG)
+  
+  * Utilities of Deep Learning Libraries
+    * Easily build big computational graphs
+    * Easily compute gradients in computational graphs
+    * Run it efficiently on GPU(cuDNN, cuBLAS or etc)
+  * Goal of Deep Learning Libraries
+    * Compute as easy as Numpy(or others), and gives gradient function and GPU utilities without struggle.
+  
+  ![Tensorflow Code Detail](/public/img/cs231n/lec8.tf_code.PNG)
+  ![Tensorflow Code Bottleneck Problem](/public/img/cs231n/lec8.tf_code_bottleneck_problem.PNG)
+  ![Tensorflow Code Bottleneck Problem 2](/public/img/cs231n/lec8.tf_code_bottleneck_problem2.PNG)
+  ![Tensorflow Code Detail 2](/public/img/cs231n/lec8.tf_code2.PNG)
+  ![Tensorflow Code Detail 3](/public/img/cs231n/lec8.tf_code3.PNG)
+  ![Tensorflow Code Detail 4](/public/img/cs231n/lec8.tf_code4.PNG)
+  ![Keras Code Detail](/public/img/cs231n/lec8.keras_code.PNG)
+  ![Range of Higher-level Wrappers](/public/img/cs231n/lec8.higher_level_wrappers.PNG)
+  
+  * Abstraction of Tensorflow
+  * APIS of Tensorflow
+  
+  ![PyTorch Code Detail](/public/img/cs231n/lec8.pytorch_code.PNG)
+  ![PyTorch Code Detail 2](/public/img/cs231n/lec8.pytorch_code2.PNG)
+  ![PyTorch Code Detail 3](/public/img/cs231n/lec8.pytorch_code3.PNG)
+  ![PyTorch Code Detail 4](/public/img/cs231n/lec8.pytorch_code4.PNG)
+  ![PyTorch Code Detail 5](/public/img/cs231n/lec8.pytorch_code5.PNG)
+  ![PyTorch Code Detail 6](/public/img/cs231n/lec8.pytorch_code6.PNG)
+  ![Torch vs PyTorch](/public/img/cs231n/lec8.torch_vs_pytorch.PNG)
+  
+  * Abstraction of PyTorch
+    * Tensor: Imperative array run-able on GPU
+    * Variable: Node that can store data and gradient
+      * PyTorch Tensors and Variables have the same API, so we just have to change Tensor to Variable
+    * Module: Neural network layer that can store state or weight
+  * APIs of Pytorch
+    * Pretrained Models: torchvision.models.*model*(pretrained=True)
+    * Visdom: logging the code and visualize the work(But, not visualize computational graph structure yet)
+  
+  ![Static vs Dynamic Graph Structure](/public/img/cs231n/lec8.static_vs_dynamic.PNG)
+  ![Dynamic Graph Application in Modular Network](/public/img/cs231n/lec8.dynamic_graph_in_modular_net.PNG)
+  
+  * Advantage of Static Structure
+    * Framework can optimize the graph before it runs(fuse operation, reordering,applying efficient method)
+    * Once graph is built, it can be serialized and do not have to rebuild the graph when re-using it(Otherwise, graph building and execution is interwined in dynamic structure)
+  * Advantage of Dynamic Structure
+    * Code is a lot cleaner and easier in most of scenarios:conditional situation, loops, else(Tensorflow must build its own entire control-flow methods(magic lines) to support all computational graphs)(There are library TensorFlow Fold that makes dynamic graphs easier in TF, using dynamic batch)
+    * Available in building Recurrent networks, Recursive network, Modular networks
+  
+  ![Caffe Overview](/public/img/cs231n/lec8.caffe_overview.PNG)
+  ![How to Define Network in Caffe prototxt](/public/img/cs231n/lec8.caffe_define_network.PNG)
+  ![Caffe Pros and Cons](/public/img/cs231n/lec8.caffe_pros_and_cons.PNG)
+  ![How to choose DL Framework](/public/img/cs231n/lec8.choose_of_framework.PNG)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
