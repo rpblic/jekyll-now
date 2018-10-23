@@ -1,0 +1,48 @@
+createdAt: "2018-10-23T10:22:59.469Z"
+updatedAt: "2018-10-23T13:28:18.588Z"
+type: "MARKDOWN_NOTE"
+folder: "418af029155901b7f280"
+title: ""
+content: '''
+  ---
+  layout: post
+  title: Lecture 9 CNN Architectures
+  category: Dl.cs231n.lecture
+  tags: ['DeepLearning', 'CS231n']
+  ---
+  
+  ![LeNet-5 Review](\\public\\img\\cs231n\\lec9.lenet5_review.PNG)
+  ![ImageNet Winners](\\public\\img\\cs231n\\lec9.ImageNet_winners.PNG)
+  
+  * AlexNet(Hinton, Montreal): First large-scale CNN structure, 2012 ImageNET classification test winner
+    * Use CONV, POOL, FCNN layers
+  
+  ![AlexNet Structure](\\public\\img\\cs231n\\lec9.alexnet.PNG)
+  ![AlexNet CONV1 Shape](\\public\\img\\cs231n\\lec9.alexnet2.PNG)
+  ![AlexNet POOL1 Shape](\\public\\img\\cs231n\\lec9.alexnet3.PNG)
+  ![AlexNet Structure 2](\\public\\img\\cs231n\\lec9.alexnet4.PNG)
+  
+  * In 2014, GoogleNet(Google) and VGGNet(Oxford) has made an huge improvements by using deeper networks(22 layers\\19 layers respectively)
+  * VGGNet: Use smaller filters than AlexNet, and connects 16~19 layers
+    * Using stacks of small filters is more efficient than using big filters! It represents linearity well, and has fewer params
+    * too many memory\\parameters costs: Most memory is in early CONV layers, Most params are in late FCNN layers
+  
+  ![VGGNet Structure](\\public\\img\\cs231n\\lec9.vggnet.PNG)
+  ![VGGNet Using Smaller filters for performance](\\public\\img\\cs231n\\lec9.vggnet2.PNG)
+  ![VGGNet Structure 2](\\public\\img\\cs231n\\lec9.vggnet3.PNG)
+  ![VGGNet Details](\\public\\img\\cs231n\\lec9.vggnet4.PNG)
+  
+  * GoogleNet: Deeper networks, interpreted classification as the problem of computational efficiency
+    * Stacked 'Inception modules' which includes CONV, POOL, and filter concaternation layers
+      * Concept of inception module: Designing a 'good local network topology', and stack those NiN(Network within a network) modules
+      * In each inception module, we apply several filter operations then concatenate all outputs
+    * No FCNN >> much less params(1\\12 less) then other CNN
+  
+  ![GoogleNet Structure](\\public\\img\\cs231n\\lec9.googlenet.PNG)
+  ![GoogleNet Inception Module Structure](\\public\\img\\cs231n\\lec9.googlenet2.PNG)
+  ![GoogleNet Computational Complexity Problem](\\public\\img\\cs231n\\lec9.googlenet3.PNG)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
