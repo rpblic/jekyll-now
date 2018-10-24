@@ -1,5 +1,5 @@
 createdAt: "2018-10-23T10:22:59.469Z"
-updatedAt: "2018-10-23T13:28:18.588Z"
+updatedAt: "2018-10-24T01:35:57.794Z"
 type: "MARKDOWN_NOTE"
 folder: "418af029155901b7f280"
 title: ""
@@ -36,11 +36,59 @@ content: '''
     * Stacked 'Inception modules' which includes CONV, POOL, and filter concaternation layers
       * Concept of inception module: Designing a 'good local network topology', and stack those NiN(Network within a network) modules
       * In each inception module, we apply several filter operations then concatenate all outputs
-    * No FCNN >> much less params(1\\12 less) then other CNN
+      * To deal with computational complexity problem(that is, # of operations and # of filters increases dramatically while stack-ing inception module), we use 'Bottleneck layer', that is 1 * 1 CONV layer(with less # of filters than input layer), to combine the features of filters in input layer 
+    * No FCNN >> much less params(1/12 less) then other CNN
+    * Use Auxiliary classification to inject additional gradient at lower layers(so that the gradient would not shrink)
   
   ![GoogleNet Structure](\\public\\img\\cs231n\\lec9.googlenet.PNG)
   ![GoogleNet Inception Module Structure](\\public\\img\\cs231n\\lec9.googlenet2.PNG)
   ![GoogleNet Computational Complexity Problem](\\public\\img\\cs231n\\lec9.googlenet3.PNG)
+  ![GoogleNet Bottleneck layer](\\public\\img\\cs231n\\lec9.googlenet4.PNG)
+  ![GoogleNet Bottleneck layer 2](\\public\\img\\cs231n\\lec9.googlenet5.PNG)
+  ![Googlenet Structure 2](\\public\\img\\cs231n\\lec9.googlenet6.png)
+  
+  * ResNet: Extremely deeper networks(152 layers), use residual connection
+    * Generally, stack extremely deeper CNN layers is not efficient; It also lacks accuracy than shallow CNN
+    * Hypothesis of ResNet Developer: the problem is an optimization problem, but deeper models are harder to optimize
+    * Solution: copying the learned layers from shallow model, then set additional layers to identity mapping
+      * That is, CONV layers are fitting residual, whereas other model just stack all layers to fit the data directly.
+    * Also used bottleneck layer to prevent it from dramatic increase in # of operations
+    * Batch Normalization, Xavier/2 initialization, SGD+Momentum, decaying learning rate, weight decay, no dropout
+  
+  ![ResNet Overview](\\public\\img\\cs231n\\lec9.resnet.png)
+  ![ResNet Residual Fitting](\\public\\img\\cs231n\\lec9.resnet2.png)
+  ![ResNet Structure](\\public\\img\\cs231n\\lec9.resnet3.png)
+  ![ResNet Bottleneck layer](\\public\\img\\cs231n\\lec9.resnet4.png)
+  ![ResNet Details](\\public\\img\\cs231n\\lec9.resnet5.png)
+  
+  * (Computational, Time, Electricity) Costs of CNN Architectures
+  
+  ![Complexity of CNN Networks](\\public\\img\\cs231n\\lec9.complexity_of_networks.png)
+  ![Complexity of CNN Networks 2](\\public\\img\\cs231n\\lec9.forward_pass_time_consumption.png)
+  
+  * Other CNN Architectures (for inspirations)
+    * Network in Network(NiN): Instead of using CONV layer, to compute more abstract features for local patches, use MLP-CONV layer('micronetwork')
+      * Uses 1 * 1 CONV layer, named multilayer perceptron, which precedes 'bottleneck layer' idea of GoogleNet and ResNet
+      * Philosophical inspiration of 'good local network topology' for GoogleNet
+    * Improvements of ResNet
+      * Identity Mappings in Deep Residual Networks: Improved ResNet by changing the structure of Residual fitting layer(BN >> ReLU >> CONV), moves activation to residual mapping pathway
+      * Wide Residual Networks: Philosophy of 'residual is important factor, not depth', then use k times more filters than basic residual block, efficiency in computation because of parallel computation
+      * ResNeXt(Aggregated Residual Transformations for DNN): Not just increases width of residual block, create structure by multiple parallel pathways(so-called cardinality), use the philosophy of inception module
+      * ResNet with Stochastic Depth: Randomly drop a residual block each training pass, then bypass the data with identity function(Motivation: reduce vanishing gradients problem and training time cost)
+    * Comparable Network Architecture(compared by ResNet)
+      * FractalNet: Argues that Key factor is transitioning effectively from shallow to deep net; not residual representation - Uses Fractal Expansion Rule Architecture and deep paths, training with dropout of sub-paths.
+      * DenseNet: Creates the 'Dense Block' which each layer is connected to every other layer(in feedforward fashion); That alleviates vanishing gradient, strengthens feature propagation and encourages feature reuse
+      * SqueezeNet: Uses 'Fire Module' which has squeeze layer(three 1 * 1 filters) and expand layer(1 * 1 and 3 * 3 filters), achieve AlexNet level acc with 50x fewer params
+  
+  ![Network in Network](\\public\\img\\cs231n\\lec9.NiN.png)
+  ![Identity Mappings in Deep Residual Networks](\\public\\img\\cs231n\\lec9.deep_residual_net.png)
+  ![Wide Residual Networks](\\public\\img\\cs231n\\lec9.wide_residual_net.png)
+  ![ResNeXt](\\public\\img\\cs231n\\lec9.resnext.png)
+  ![ResNet with Stochastic Depth](\\public\\img\\cs231n\\lec9.resnet_with_stochastic_depth.png)
+  ![FractalNet](\\public\\img\\cs231n\\lec9.fractalnet.png)
+  ![DenseNet](\\public\\img\\cs231n\\lec9.densenet.png)
+  ![SqueezeNet](\\public\\img\\cs231n\\lec9.squeezenet.png)
+  ![Summary of CNN Architectures](\\public\\img\\cs231n\\lec9.architecture_summary.png)
   
 '''
 tags: []
