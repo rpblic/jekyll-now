@@ -1,0 +1,67 @@
+createdAt: "2018-10-25T11:25:08.627Z"
+updatedAt: "2018-10-25T13:42:44.543Z"
+type: "MARKDOWN_NOTE"
+folder: "418af029155901b7f280"
+title: "Flexibility in data shape which model can made: one-to-many, many-to-one, many-to-many, even in sequential processing method of non-sequence data (ex) generate images, but one piece at a time)"
+content: '''
+  ---
+  layout: post
+  title: Lecture 10 Recurrent NN
+  category: Dl.cs231n.lecture
+  tags: ['DeepLearning', 'CS231n']
+  ---
+  
+  * Flexibility in data shape which model can made: one-to-many, many-to-one, many-to-many, even in sequential processing method of non-sequence data (ex) generate images, but one piece at a time)
+    * Usually used in 'language modeling', but not just in language domain
+    * Use of One-to-Many
+    * Use of Many-to-One
+    * Use of Many-to-Many
+  
+  ![RNN function explained](\\public\\img\\cs231n\\lec10.rnn_function.PNG)
+  
+  * Recurrent NN: Processing a sequence of vector x by applying a recurrence formula f(with param W), then renew the state every time step
+    * In vanilla RNN, function f is a composite function of matrix multiplication and activation(use tanh)
+    * In vanilla RNN, we calculate y from matrix multiplication of state h and params W
+    * In Seq2Seq, We combine Many-to-One and One-to-Many by encoder-decoder structure
+  
+  ![Vanilla RNN function](\\public\\img\\cs231n\\lec10.vanilla_rnn_function.PNG)
+  ![RNN structure](\\public\\img\\cs231n\\lec10.rnn_structure.PNG)
+  ![RNN structure - Seq2Seq](\\public\\img\\cs231n\\lec10.seq2seq.PNG)
+  ![Example of RNN: Training 'Hello'](\\public\\img\\cs231n\\lec10.hello_example.PNG)
+  
+  * Usually, Using same params matrix W causes problems in backpropagation: summing the overall gradient changes from every sequence data costs a lot of computation, a lot of memory, and not efficient for convergence
+    * Truncated Backpropagation: Do backpropagation after some smaller number of batch, which is relavant with stochastic method
+  
+  ![Truncated Backpropagation](\\public\\img\\cs231n\\lec10.truncated_backprop.PNG)
+  
+  * In the cells of matrices, there are some interpretable cells that explains the structure of given sequence data
+  
+  ![Interpretable Cell in RNN](\\public\\img\\cs231n\\lec10.interpretable_cell.PNG)
+  
+  * Image Captioning: Given image data, make features of that image so that create a caption that explains the image
+    * Combining CNN and RNN: add vector v (result of CNN) as a additional state of RNN, then create a caption
+    * with Attention: Feature extraction(produces grid of feature vector instead of FCNN vector) through CNN, then use LSTM with attention to word-by-word generation.
+      * Can be used in Visual QA
+  
+  ![Image Captioning with CNN & RNN](\\public\\img\\cs231n\\lec10.image_captioning.PNG)
+  ![Image Captioning with Attention](\\public\\img\\cs231n\\lec10.image_captioning_with_attention.PNG)
+  ![Image Captioning with Attention2](\\public\\img\\cs231n\\lec10.image_captioning_with_attention2.PNG)
+  ![QA with RNN and Attention](\\public\\img\\cs231n\\lec10.QA_with_RNN_and_Attention.PNG)
+  
+  * Improvements on RNN
+    * Multilayer RNNs: Stack hidden states of RNN layers so that it could arrange with complicated problems
+    * LSTM
+      * Motivation: fitting state h would be extreamly hard; since we are multiplicating the matrix W-transpose for each RNN time steps, fittng the precedent h would lead to exploding gradients or vanishing gradients
+      * Solution: architechtureuild more complicated recurrence architechture which would prevent gradients from exploding or vanishing
+      * Use two hidden states h(hidden state) and c(cell state, internel state in the LSTM cell)
+      * has four gate i(input gate: whether to write to cell), f(forget gate: whether to erase cell), o(output gate: how much to reveal cell state), g(gate: what value to update in the cell state)
+  
+  ![Multilayer RNN](\\public\\img\\cs231n\\lec10.multilayer_rnn.PNG)
+  ![Vanilla RNN Gradient Flow](\\public\\img\\cs231n\\lec10.vanilla_rnn_gradient_flow.PNG)
+  ![Structure of LSTM](\\public\\img\\cs231n\\lec10.lstm_structure.PNG)
+  ![Structure of LSTM 2](\\public\\img\\cs231n\\lec10.lstm_structure2.PNG)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
